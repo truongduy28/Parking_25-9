@@ -1,0 +1,113 @@
+.container {
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+}
+
+.container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.container h4 {
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.container form {
+    width: 20%;
+    margin: 10px auto;
+    text-align: left;
+    background: #f4f4f4;
+    border: 0.5px solid #ccc;
+    padding: 20px;
+}
+
+.container form div.form-control {
+    margin: 10px 0px;
+}
+
+.container form div.form-control label {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.container form div.btn {
+    text-align: center;
+}
+
+.container form div.btn button {
+    border: 3px solid #cb7800;
+    background: #cb7800;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.container form div.btn button:hover {
+    border: 3px solid;
+    color: #cb7800;
+    padding: 10px;
+    background: white;
+}
+
+.container form input {
+    width: 97%;
+    padding: 7px 5px;
+    border: 0.5px solid #ccc;
+}
+
+.result {
+    width: max-content;
+    padding: 20px 90px 20px 10px;
+    border-left: 8px solid #00ff03;
+    border-top: 1px solid #48484821;
+    transition: all 0.5s;
+    position: fixed;
+    top: 15%;
+    font-family: system-ui;
+    font-weight: 200;
+    right: -100%;
+    background: #aeffb8a6;
+}
+
+.isset {
+    width: max-content;
+    padding: 20px 90px 20px 10px;
+    border-left: 8px solid red;
+    border-top: 1px solid #27272721;
+    transition: all 0.5s;
+    position: fixed;
+    top: 15%;
+    font-family: system-ui;
+    font-weight: 200;
+    right: -100%;
+    background: #ffaeae3d;
+}
+
+.result_active {
+    right: 0%;
+}
+
+.success {
+    color: rgb(2, 86, 2);
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.success {
+    color: rgb(25, 248, 25);
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.errorMessage {
+    color: rgb(255, 0, 0);
+    font-weight: 200;
+    font-size: 14px;
+}

@@ -1,0 +1,91 @@
+.footer {
+    background-color: #000;
+    font-size: 15px;
+    color: #d5d5d5;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 100px 15%;
+    line-height: 1.8em;
+    font-weight: 100;
+}
+
+.footer .footer-contact {
+    flex: 1;
+}
+
+.footer .footer-contact>p {
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+.footer .footer-contact .elements {
+    padding: 30px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.footer .footer-contact .elements .element {
+    width: 40%;
+}
+
+.footer .footer-contact .elements .element a {
+    color: #d5d5d5;
+}
+
+.footer .footer-contact .elements .element_1 p {
+    padding: 10px 0px;
+}
+
+.footer .footer-contact .elements .element_1 p a {
+    margin-right: 10px;
+}
+
+.footer .footer-mess {
+    flex: 1;
+}
+
+.footer .footer-mess>p {
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+.footer .footer-mess .elements {
+    padding: 30px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.footer .footer-mess .elements .element {
+    width: 45%;
+}
+
+.footer .footer-mess .elements .element a {
+    color: #d5d5d5;
+}
+
+.footer .footer-mess .elements .element input {
+    background: #313131;
+    color: #e8dbdb;
+    border: none;
+    width: 98%;
+    padding: 11px;
+}
+
+.footer .footer-mess .elements .element_2 {
+    padding: 0px;
+}
+
+.footer .footer-mess .elements .element_2 input {
+    padding: 43px 12px;
+}
+
+.footer .footer-mess .elements .element_2 button {
+    float: right;
+    background: none;
+    color: #c69256;
+    border: 2px solid;
+    padding: 7px 35px;
+}

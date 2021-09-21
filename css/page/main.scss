@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* start code */
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+& .banner {
+    height: 100%;
+    &-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0, 0.5);
+        z-index: 100;
+    }
+    & .img-slide {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2;
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.content {
+    padding: 0px;
+}
+
+.interested {
+    padding: 0px 10%;
+    margin: 80px 0px;
+    & h3 {
+        color: #c6a47e;
+        padding: 15px 0px;
+        font-size: 23px;
+        font-weight: 600;
+    }
+    & .elements {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        & .element {
+            margin: 0px 0px 20px;
+            width: 48%;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            & .img {
+                width: 100%;
+                height: 300px;
+            }
+            & a {
+                & h6 {
+                    color: #cb7800;
+                    font-size: 20px;
+                    margin: 12px 0px;
+                    font-weight: 600;
+                }
+            }
+            & p {
+                line-height: 1.4em;
+                color: #333333;
+                font-size: 15px;
+                font-weight: 400;
+                padding: 0px 0px 10px;
+            }
+            & span {
+                color: #870000;
+            }
+        }
+    }
+    & .show-all {
+        text-align: center;
+        & a {
+            color: #cb7800;
+        }
+    }
+}
+
+.sub_banner {
+    background-image: url('../../img/banner/banner_4.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.reason {
+    padding: 80px 10%;
+    line-height: 1.5em;
+    & h3 {
+        color: #c6a47e;
+        padding: 15px 0px;
+        font-size: 23px;
+        font-weight: 600;
+        text-align: center;
+    }
+    & p {
+        padding: 20px 10%;
+        font-style: italic;
+    }
+}
+
+.footer {
+    background-color: #000;
+    font-size: 15px;
+    color: #d5d5d5;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 100px 15%;
+    line-height: 1.8em;
+    font-weight: 100;
+    & .footer-contact {
+        flex: 1;
+        &>p {
+            letter-spacing: 2px;
+            font-size: 19px;
+        }
+        & .elements {
+            padding: 30px 0px 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            & .element {
+                width: 40%;
+                & a {
+                    color: #d5d5d5;
+                }
+            }
+            & .element_1 {
+                & p {
+                    padding: 10px 0px;
+                    & a {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    & .footer-mess {
+        flex: 1;
+        &>p {
+            letter-spacing: 2px;
+            font-size: 19px;
+        }
+        & .elements {
+            padding: 30px 0px 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            & .element {
+                width: 45%;
+                & a {
+                    color: #d5d5d5;
+                }
+                & input {
+                    background: #313131;
+                    color: #e8dbdb;
+                    border: none;
+                    width: 98%;
+                    padding: 11px;
+                }
+            }
+            & .element_2 {
+                padding: 0px;
+                & input {
+                    padding: 43px 12px;
+                }
+                & button {
+                    float: right;
+                    background: none;
+                    color: #c69256;
+                    border: 2px solid;
+                    padding: 7px 35px;
+                }
+            }
+        }
+    }
+}
+
+
+/*# sourceMappingURL=main.css.map */

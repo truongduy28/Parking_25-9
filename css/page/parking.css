@@ -49,14 +49,18 @@ body {
     font-weight: 800;
 }
 
-.parking .parking-elements .parking-element_right form button:hover {
+.parking .parking-elements .parking-element_right div a:hover {
     border: 3px solid;
     color: #cb7800;
     padding: 10px 70px;
     background: white;
 }
 
-.parking .parking-elements .parking-element_right form button {
+.parking .parking-elements .parking-element_right div {
+    padding: 40px 5px;
+}
+
+.parking .parking-elements .parking-element_right div a {
     border: 3px solid #cb7800;
     background: #cb7800;
     padding: 10px 70px;
@@ -71,11 +75,97 @@ body {
     height: 25px;
 }
 
+.parking-slot .slots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100px;
+    overflow-y: hidden;
+    transition: all 0.5s;
+}
+
+.parking-slot .view-all {
+    height: auto;
+}
+
+.parking-slot .slots .slot {
+    width: 8%;
+    margin: 10px 20px;
+    background: #ececec;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.parking-slot h3 {
+    text-align: center;
+    color: #c6a47e;
+    padding: 15px 0px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
 .sub_banner {
     background-image: url("../../img/banner/banner_4.jpg");
     background-size: cover;
     width: 100%;
     height: 30vh;
+}
+
+.view-all-slot {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ajax-load-details {
+    padding: 100px 0px 50px;
+}
+
+.ajax-load-details center {
+    color: red;
+}
+
+.details_parking {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    line-height: 1.5rem;
+}
+
+.details_parking .element {
+    width: 50%;
+}
+
+.details_parking .booking input {
+    width: 100%;
+    padding: 5px 0px 5px 20px;
+    margin: 0px 0px 10px;
+}
+
+.details_parking .booking div button {
+    border: 3px solid #cb7800;
+    background: #cb7800;
+    padding: 10px 70px;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.details_parking .booking div button:hover {
+    border: 3px solid;
+    color: #cb7800;
+    padding: 10px 70px;
+    background: white;
+}
+
+.details_parking .booking div {
+    padding: 15px 0px;
+    text-align: center;
 }
 
 

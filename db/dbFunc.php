@@ -16,7 +16,7 @@ function executeResult($sql)
 {
     $conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
     $result = mysqli_query($conn, $sql);
-   
+
     if (mysqli_errno($conn)) {
     }
     if ($result != null) {
@@ -43,7 +43,7 @@ function validateToken()
 
     if (isset($_COOKIE['token'])) {
         $token = $_COOKIE['token'];
-        $sql   = "select * from users where token = '$token'";
+        $sql   = "select * from taikhoan where e_token = '$token'";
         $data  = executeResult($sql);
         if ($data != null && count($data) > 0) {
             return $data[0];

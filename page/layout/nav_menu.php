@@ -24,9 +24,21 @@
                 </a>
             </li>
             <li >
-                <a  class="login authen" href="login.php">
-                    ĐĂNG NHẬP
-                </a>
+                <?php
+                    $check_token = validateToken();
+                    if($check_token){
+                        echo '  <a class="login authen" href="login.php">
+                                '.$check_token['taikhoan'].'</a>
+                            </a>';
+                    }else{
+                        echo '
+                        <a  class="login authen" href="login.php">
+                            ĐĂNG NHẬP
+                        </a>
+                        ';
+                    }
+                ?>
+              
             </li>
         </ul>
     </div>

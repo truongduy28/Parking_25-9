@@ -23,7 +23,6 @@
             }
         }
         ?>
-
     </div>
     <div class="show-all">
         <a href="#">Xem thêm tất cả các bãi đỗ... </a>

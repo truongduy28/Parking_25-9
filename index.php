@@ -21,7 +21,7 @@ for($i = 0; $i < $sl ; $i++){
     $tenvitri = 'BAI'.$value;
     $sql = "INSERT INTO `vitri` (`id_baixe`, `tenvitri`, `trangthai`, `ngaydat`) VALUES ($id_baixe, '$tenvitri', 1, NULL) ";
     execute($sql);
-    // echo $sql.'<br>';
+    echo $sql.'<br>';
 
 }
 ?>

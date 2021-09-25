@@ -3,8 +3,6 @@ require_once('../db/dbFunc.php');
 $id_baixe = getGET('id');
 $sql_bai = "SELECT * from baixe WHERE id_baixe = $id_baixe ";
 $bai = executeResult($sql_bai);
-
-
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +33,6 @@ $bai = executeResult($sql_bai);
         <div class="content">
             <div class="parking">
                 <input type="text" id="id-baixe" value="<?= $bai[0]['id_baixe'] ?>">
-
                 <div class="parking-elements">
                     <div class="parking-element_left">
                         <img src="<?= $bai[0]['hinhanh'] ?>" alt="">
@@ -88,6 +85,13 @@ $bai = executeResult($sql_bai);
             <div class="sub_banner">
             </div>
             <?php
+            $id_taikhoan = getPOST('id_taikhoan');
+            $id_vitri = getPOST('id_vitri');
+            $date_from = getPOST('date_from_slot');
+            $date_to = getPOST('date_to_slot');
+            echo $id_taikhoan, $id_vitri, $date_from, $date_to;
+            ?>
+            <?php
             include('../page/layout/target.php');
             ?>
         </div>
@@ -135,9 +139,17 @@ $bai = executeResult($sql_bai);
         //     const b = $('date_to_slot').val();
         //     console.log(a,b);
         // })
-        $('#test').click(function(){
-            console.log('ok');
-        })
+        function nosub (e){
+            e.preventDefault();
+            var from = $("#date_from_slot").val();
+            var to = $("#date_to_slot").val();
+
+            if (Date.parse(from) > Date.parse(to)) {
+                alert("Invalid Date Range");
+            } else {
+                alert("Valid date Range");
+            }
+        }
     </script>
 </body>
 

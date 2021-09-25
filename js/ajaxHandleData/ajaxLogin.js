@@ -85,16 +85,14 @@ window.onload = function() {
             check = true;
         }
     }
-    const submit = document.querySelector('#login-submit');
-    submit.addEventListener('submit', function(e) {
-        console.log(check);
+    const submit = document.querySelector('#submit');
+    submit.addEventListener('click', function(e) {
         e.preventDefault();
         if (check == false) {
             console.log('Data form illegal');
         } else {
             const userVal = user.value.trim();
             const passVal = pass.value.trim();
-            console.log(userVal, passVal);
             $.ajax({
                 url: '../funcHandle/login.php',
                 type: 'POST',

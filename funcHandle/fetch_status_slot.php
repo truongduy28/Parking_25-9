@@ -17,7 +17,7 @@ if ($result != null) {
       </div>
       <div class="booking element">
           <h3 id="test">Đặt chỗ: </h3>
-          <form action="../funcHandle/add_slot.php" method="post">
+          <form  method="post">
           ';
     if ($check_token) {
         $output .= ' 
@@ -26,13 +26,13 @@ if ($result != null) {
               ';
     }
     $output .= '
-              <input name="id_vitri" type="text" value="' . $slot['id_vitri'] . '">
+              <input  name="id_vitri" type="text" value="' . $slot['id_vitri'] . '">
               <label for="">Từ ngày: </label>
-              <input  id="date_from_slot" type="date">
+              <input name="date_from_slot"  id="date_from_slot" type="date">
               <label for="">Đến ngày: </label>
-              <input date_to_slot type="date" name="" id="">
+              <input name="date_to_slot" type="date" name="" id="">
               <div>
-              <button name="thanhtoan" id="booking_slot" type="submit" >XÁC NHẬN ĐƠN ĐẶT LỊCH</button>
+              <button onclick="nosub()" name="thanhtoan" id="booking_slot" type="submit" >XÁC NHẬN ĐƠN ĐẶT LỊCH</button>
               </div>
           </form>
       </div>

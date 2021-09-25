@@ -28,7 +28,7 @@
             </div>
 
             <div class="btn">
-                <button class="" id="">ĐĂNG NHẬP</button>
+                <button class="" id="submit">ĐĂNG NHẬP</button>
             </div>
         </form>
         Bạn chưa có tài khoản?

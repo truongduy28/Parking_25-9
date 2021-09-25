@@ -1,0 +1,94 @@
+/* start code */
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+.header {
+    height: 15vh;
+    background-color: #000;
+    font-size: 21px;
+}
+
+.content {
+    padding: 0px;
+}
+
+.sub_banner {
+    background-image: url("../../img/banner/banner_4.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+.confirm {
+    width: 60%;
+    margin: 70px auto;
+}
+
+.confirm form h3 {
+    text-align: center;
+    color: #c6a47e;
+    padding: 15px 0px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.confirm form {
+    line-height: 1.5rem;
+    padding: 40px 80px;
+    text-align: center;
+    border: 1px solid #a0a0a0;
+    box-shadow: 0px 0px 18px #d1d1d1;
+}
+
+.confirm form .form-control {
+    margin-bottom: 5px;
+}
+
+.confirm form .total {
+    font-size: 19px;
+    font-weight: 700;
+    color: red;
+    margin-top: 10px;
+}
+
+.confirm form .form-control span {
+    color: #cb7800;
+}
+
+.confirm form .form-control input {
+    padding: 10px 20px;
+    width: 100%;
+    border-bottom: 3px solid #cb7800;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.confirm form button {
+    border: 3px solid #cb7800;
+    background: #cb7800;
+    padding: 10px 70px;
+    color: white;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.confirm form button p {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.confirm form button:hover {
+    border: 3px solid;
+    color: #cb7800;
+    padding: 10px 70px;
+    background: white;
+}
+
+
+/*# sourceMappingURL=main.css.map */
+
+
+/*# sourceMappingURL=main.css.map */

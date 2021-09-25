@@ -17,7 +17,7 @@ if ($result != null) {
       </div>
       <div class="booking element">
           <h3 id="test">Đặt chỗ: </h3>
-          <form  method="post">
+          <form  method="post" action="../funcHandle/booking.php">
           ';
     if ($check_token) {
         $output .= ' 
@@ -32,7 +32,7 @@ if ($result != null) {
               <label for="">Đến ngày: </label>
               <input name="date_to_slot" type="date" name="" id="">
               <div>
-              <button onclick="nosub()" name="thanhtoan" id="booking_slot" type="submit" >XÁC NHẬN ĐƠN ĐẶT LỊCH</button>
+              <button name="thanhtoan" id="booking_slot" type="submit" >XÁC NHẬN ĐƠN ĐẶT LỊCH</button>
               </div>
           </form>
       </div>
